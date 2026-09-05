@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#111827" />
+  <title>Calculator</title>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <main class="calculator" aria-label="Calculadora científica">
+    <header>
+      <div><p class="eyebrow">NOVA</p><h1>Calculadora</h1></div>
+      <button id="theme" class="icon-button" title="Cambiar tema" aria-label="Cambiar tema">☼</button>
+    </header>
+    <section class="screen" aria-live="polite">
+      <div class="status"><span id="memory">M</span><span id="mode">DEG</span></div>
+      <div id="expression" class="expression">0</div>
+      <output id="result">0</output>
+    </section>
+    <section class="controls" aria-label="Funciones científicas">
+      <button class="mode" id="angle">DEG</button><button class="mode" id="inverse">INV</button><button class="mode" id="secondary">2nd</button><button data-action="clear" class="danger">AC</button><button data-action="backspace">⌫</button>
+      <button data-action="memory-clear">MC</button><button data-action="memory-recall">MR</button><button data-action="memory-add">M+</button><button data-action="memory-subtract">M−</button><button data-value="/">÷</button>
+      <button data-fn="sin">sin</button><button data-fn="cos">cos</button><button data-fn="tan">tan</button><button data-value="(">(</button><button data-value=")">)</button>
+      <button data-fn="log">log</button><button data-fn="ln">ln</button><button data-fn="sqrt">√</button><button data-value="^">xʸ</button><button data-value="%">%</button>
+      <button data-fn="factorial">x!</button><button data-value="pi">π</button><button data-value="e">e</button><button data-value="*">×</button><button data-value="-">−</button>
+      <button data-value="7">7</button><button data-value="8">8</button><button data-value="9">9</button><button data-value="+">+</button><button data-fn="abs">|x|</button>
+      <button data-value="4">4</button><button data-value="5">5</button><button data-value="6">6</button><button data-fn="reciprocal">1/x</button><button data-fn="square">x²</button>
+      <button data-value="1">1</button><button data-value="2">2</button><button data-value="3">3</button><button data-action="ans">Ans</button><button data-action="negate">(-)</button>
+      <button class="fraction" data-value="/" title="Fracción: primero el numerador y después el denominador">a⁄b</button>
+      <button class="wide" data-value="0">0</button><button data-value=".">.</button><button class="equals" data-action="equals">=</button>
+    </section>
+    <p class="hint">Signo: <kbd>±</kbd> · Fracciones: <kbd>1</kbd> <kbd>a⁄b</kbd> <kbd>2</kbd></p>
+  </main>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
